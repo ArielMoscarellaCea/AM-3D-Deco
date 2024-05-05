@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AM 3D & Deco</title>
+      
+  <!-- 
+    - AM 3D & Deco
+  -->
+  <link rel="shortcut icon" href="./AM_3D_&_Deco.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css 
+  -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <!--
+    - font awesome 
+    -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- 
+    - google font 
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <!-- 
+    - preload banner
+  -->
+  <link rel="preload" href="./assets/images/Freepik/Hombre-Movil-Y-Ordenador.jpg" as="image">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/Logo Final.png" width="160" height="50" alt="AM logo">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/Logo Final.png" width="190" height="50" alt="AM logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="nosotros.html" class="navbar-link">Sobre Nosotros</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="decoracion3D.html" class="navbar-link">Productos 3D</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="tufting.html" class="navbar-link">Productos Tufting</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="tienda.html" class="navbar-link">Tienda</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contacto.html" class="navbar-link">Contacto</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          
+
+          <li>
+            <button class="nav-action-btn">
+              
+              <div>
+                <ul>
+                    <li class="submenu ">
+                        <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+                        <div id="carrito">
+
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="vaciar">Vaciar Carrito</a>
+                            <br>
+                            <a href="./Carrito/carritoCompra.html" class="compra">Realizar Compra</a>
+                        </div>
+                    </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/images/Freepik/Hombre-Movil-Y-Ordenador.jpg')">
+        <div class="container">
+
+          <h2 class="h1 hero-title">
+            <strong>Contactanos</strong>
+          </h2>
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+     <section class="section collection">
+
+      <div class="container">
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Cotactanos</h3>
+                <form action="https://script.google.com/macros/s/AKfycbyICkEhoWsNtysnjmc2qb30jcOyQsG4SsMHmOYjhOLSc-uzEBeKtzkwCEabPOWaD9uk/exec" name="my-google-sheets" method="POST">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="Nombre" class="form-control" required>
+                    </p>
+                    <p>
+                        <label>Correo</label>
+                        <input type="email" name="Correo" class="form-control" required>
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="tel" name="Telefono" class="form-control" required>
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="Asunto" class="form-control" required>
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="Mensaje" rows="3" class="form-control" required></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>Más Informacion</h4>
+                <ul class="fa-ul">
+                    <a href="https://maps.app.goo.gl/uS6acmzyWCd2bKDk7" target="_blank" ><li><i class="fas fa-map-marker-alt"></i>Travesia Pielago 1, Ciudad Real, CP 13002, España</li></a>
+                    <a href="https://api.whatsapp.com/send?phone=34651059974" target="_blank" ><li><i class="fas fa-phone" ></i> (+34) 651059974</li></a>
+                </ul>
+                <p><br>¡Nos encantaría escuchar de ti!</br>
+
+                  <br>¿Tienes alguna pregunta, comentario o sugerencia? </br>
+                  <br>¡No dudes en ponerte en contacto con nosotros! Estamos aquí para ayudarte en lo que necesites.</br>
+                </p>
+            </div>
+        </div>
+
+    </div>
+  </section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/Logo Final.png" width="160" height="50" alt="AM logo">
+          </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contactanos</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  Travesia Pielago 1, Ciudad Real, CP 13002, España
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+34 651059974" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+34651059974</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="mailto:amdecoraciones@gmail.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">amdecoracion@gmail.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Mi Cuenta</p>
+            </li>
+
+            <li>
+              <a href="finalCompra.html" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Ver Carrito</span>
+              </a>
+            </li>
+
+
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Horarios</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Lunes:</th>
+
+                  <td class="table-data">8AM - 10PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Martes:</th>
+
+                  <td class="table-data">8AM - 10PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Miercoles:</th>
+
+                  <td class="table-data">8AM - 7PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Jueves:</th>
+
+                  <td class="table-data">8AM - 10PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Viernes:</th>
+
+                  <td class="table-data">7AM - 12PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sabado:</th>
+
+                  <td class="table-data">9AM - 8PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Domingo:</th>
+
+                  <td class="table-data">Cerrado</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Noticias</p>
+
+            <p class="newsletter-text">
+              Suscribite para recibir noticias y rebajas todos los dias!
+            </p>
+
+            <form action=https://script.google.com/macros/s/AKfycbx_D9lyo-E5Cx-QnZA3_rBchEtKKkYv9tLzUQcYqXVToTSiXtrmBqLKO15gI6rqawRd/exec name="my-google-sheets" class="newsletter-form">
+              <input type="email" name="Correo"  placeholder="Email Address" class="newsletter-input"required>
+
+              <button type="submit" class="btn btn-primary">Suscribirse</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
